@@ -37,3 +37,11 @@ do
     arr[((i++))]=$val
 done
 echo "Dictionary to array : ${arr[@]}"
+
+sortDescArr=( $(
+    for i in "${arr[@]}"
+    do
+        echo "$i"
+    done | sort -nr) )
+
+echo "Array in the descending order : ${sortDescArr[@]}"
