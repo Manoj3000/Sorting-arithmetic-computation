@@ -44,4 +44,12 @@ sortDescArr=( $(
         echo "$i"
     done | sort -nr) )
 
-echo "Array in the descending order : ${sortDescArr[@]}"
+echo "Sort array in the descending order : ${sortDescArr[@]}"
+
+sortAsceArr=( $(
+    for i in "${sortDescArr[@]}"
+    do
+        echo "$i"
+    done | sort -n ) )
+
+echo "Sort array in the ascending order : ${sortAsceArr[@]}"
