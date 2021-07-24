@@ -29,3 +29,11 @@ computation[comp3]=$compute3
 computation[comp4]=$compute4
 
 echo "computation dictionary : " ${computation[@]}
+
+arr=()
+i=0
+for val in ${computation[@]}
+do
+    arr[((i++))]=$val
+done
+echo "Dictionary to array : ${arr[@]}"
