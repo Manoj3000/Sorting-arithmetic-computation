@@ -19,3 +19,12 @@ echo "Result of compute3 : $compute3"
 
 compute4=$(( $a % $b + $c ))
 echo "Result of compute4 : $compute4"
+
+declare -A computation
+
+computation[comp1]=$compute1
+computation[comp2]=$compute2
+computation[comp3]=$compute3
+computation[comp4]=$compute4
+
+echo "computation dictionary : " ${computation[@]}
