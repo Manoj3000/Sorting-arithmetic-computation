@@ -16,3 +16,6 @@ echo "Result of compute2 : $compute2"
 
 compute3=$(( $c + $a / $b ))
 echo "Result of compute3 : $compute3"
+
+compute4=$(( $a % $b + $c ))
+echo "Result of compute4 : $compute4"
