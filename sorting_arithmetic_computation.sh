@@ -10,3 +10,6 @@ echo "Value of c : $c"
 
 compute1=$(( a + b * c ))
 echo "Result of compute1 : $compute1"
+
+compute2=$(( a * b + c ))
+echo "Result of compute2 : $compute2"
